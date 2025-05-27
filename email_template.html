@@ -1,0 +1,19 @@
+<h2 style="font-family: Arial, sans-serif;">Daily Report</h2>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-family: Arial, sans-serif; width: 100%;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      {{#headers}}
+        <th style="background-color: #f2f2f2; text-align: left;">{{.}}</th>
+      {{/headers}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#rows}}
+      <tr style="background-color: {{rowColor}};">
+        {{#cells}}
+          <td>{{.}}</td>
+        {{/cells}}
+      </tr>
+    {{/rows}}
+  </tbody>
+</table>
